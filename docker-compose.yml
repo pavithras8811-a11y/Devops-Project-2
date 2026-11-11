@@ -1,0 +1,7 @@
+services:
+  server-health-monitor:
+    build: .
+    container_name: server-health-monitor
+    ports:
+      - "8501:8501"
+    restart: unless-stopped
